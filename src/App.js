@@ -1,11 +1,10 @@
+import { Header } from "./components/Header";
 import "./index.css";
 function App() {
   return (
-    <div className="container light">
+    <div className="container dark">
       <main className="content">
-        <h1>Titulo</h1>
-        <h1>Titulo</h1>
-        <h1>Titulo</h1>
+        <Header />
       </main>
     </div>
   );
