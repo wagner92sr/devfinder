@@ -1,5 +1,6 @@
 import "./card.css";
 import { CardHeader } from "./Header";
+import { Counters } from "./Counters";
 
 export function Card() {
   return (
@@ -11,7 +12,7 @@ export function Card() {
 
         <p className="bio">bio</p>
 
-        <div>counters</div>
+        <Counters />
 
         <footer>footer</footer>
       </main>
