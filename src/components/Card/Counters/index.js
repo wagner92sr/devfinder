@@ -1,8 +1,11 @@
+import { useTheme } from "../../../contexts/themeContext";
 import "./counters.css";
 
 export function Counters() {
+  const { theme } = useTheme();
+
   return (
-    <section className="counters dark">
+    <section className={`counters ${theme}`}>
       <div className="counter-item">
         <span>Repos</span>
         <h2>10</h2>
