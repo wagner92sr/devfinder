@@ -1,4 +1,5 @@
 import "./card.css";
+import { CardHeader } from "./Header";
 
 export function Card() {
   return (
@@ -6,7 +7,7 @@ export function Card() {
       <img alt="Imagem usuário" className="image" />
 
       <main className="card-body">
-        <header>header</header>
+        <CardHeader />
 
         <p className="bio">bio</p>
 
