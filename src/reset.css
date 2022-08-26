@@ -1,40 +1,41 @@
-:root{
-    --blueLight: #1F2A48
-    --blue: #0178ff;
-    --blueDark: #141C2F;
-    --gray: #7C869D;
-    --grayDark: #555;
-    --white: #FFF;
-    --light: #E0E0E0;
+:root {
+  --blueLight: #1f2a48;
+  --blue: #0178ff;
+  --blueDark: #141c2f;
+  --gray: #7c869d;
+  --grayDark: #555;
+  --white: #fff;
+  --light: #e0e0e0;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Fira mono', sans-serif, monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira mono", sans-serif, monospace;
 }
 
-a{
-    text-decoration: none;
-    transition: all 0.16s ease-in-out;
+a {
+  text-decoration: none;
+  transition: all 0.16s ease-in-out;
 }
 
-button, input {
-    outline: 0;
-    border: 0;
-    font-size: 16px;
-    font-weight: 500;
-    height: 50px;
-    padding: 0px 24px;
-    border-radius: 8px;
-    transition: 0.15s ease-in;
+button,
+input {
+  outline: 0;
+  border: 0;
+  font-size: 16px;
+  font-weight: 500;
+  height: 50px;
+  padding: 0px 24px;
+  border-radius: 8px;
+  transition: 0.15s ease-in;
 }
 button {
-    color: var(--white);
-    cursor: pointer;    
+  color: var(--white);
+  cursor: pointer;
 }
 
-button:hover{
-    opacity: 0.75;
+button:hover {
+  opacity: 0.75;
 }
