@@ -1,9 +1,25 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
+import api from "../services/api";
 
 const UserContext = createContext({});
 
 export function UserProvider({ children }) {
-  return <UserContext.Provider value={{}}>{children}</UserContext.Provider>;
+  function searchUser(name) {
+    api
+      .get(`/users/${name}`)
+      .then((res) => {
+        console.log("RESULT: ", res.data);
+      })
+      .catch((err) => {
+        console.log("ERROR: ", err);
+      });
+  }
+
+  return (
+    <UserContext.Provider value={{ searchUser }}>
+      {children}
+    </UserContext.Provider>
+  );
 }
 
 export function useUser() {
